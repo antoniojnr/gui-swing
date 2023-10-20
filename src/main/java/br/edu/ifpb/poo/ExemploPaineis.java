@@ -1,9 +1,7 @@
-package aula;
+package br.edu.ifpb.poo;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class ExemploPaineis extends JFrame {
     JButton button1;
@@ -18,15 +16,9 @@ public class ExemploPaineis extends JFrame {
         button1 = new JButton("Ok");
         button2 = new JButton("Cancelar");
         button1.setIcon(icone);
-        button1.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                painel3.setVisible(!painel3.isVisible());
-            }
-        });
-        button2.addActionListener(e -> {
-            System.out.println("Botão Cancelar clicado");
-        });
+        button1.addActionListener(e ->
+                painel3.setVisible(!painel3.isVisible()));
+        button2.addActionListener(e -> System.out.println("Botão Cancelar clicado"));
         painel1.setBackground(new Color(0xFFC6F9BF, true));
         painel1.setBounds(0, 0, 100, 100);
         painel2.setBackground(new Color(0xFF9BC8FF, true));

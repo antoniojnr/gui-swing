@@ -1,4 +1,4 @@
-package aula;
+package br.edu.ifpb.poo;
 
 import javax.swing.*;
 import java.awt.*;
